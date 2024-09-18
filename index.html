@@ -54,11 +54,16 @@
             <p class="text-derechos">© 2024 - Derechos reservados por Jerónimo Podestá.</p>
         </div>
         <div class="container-contacto">
-            <a class="t-scale" target="_blank"><img src="images/linkedin-logo.png" alt="Perfil de LinkedIn"></a>
-            <a class="t-scale" href="" target="_blank"><img src="images/github-logo.png" alt="Perfil de Github"></a>
-            <a class="t-scale" href="" target="_blank"><img src="images/mail-logo.png" alt="Mail de Contanto"></a>
+            <a class="t-scale" href="https://www.linkedin.com/in/jeronimo-podesta/" target="_blank"><img src="images/linkedin-logo.png" alt="Perfil de LinkedIn"></a>
+            <a class="t-scale" href="https://github.com/jpodesta-uade" target="_blank"><img src="images/github-logo.png" alt="Perfil de Github"></a>
+            <a class="t-scale" onclick="linkMail()" target="_blank"><img src="images/mail-logo.png" alt="Mail de Contanto"></a>
         </div>
-        
+        <script>
+            function linkMail(){
+                navigator.clipboard.writeText("jpodesta8@gmail.com");
+                alert("Mail copiado en el borrador.");
+            }
+        </script>
     </footer>
 </body>
 </html>
