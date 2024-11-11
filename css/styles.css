@@ -31,10 +31,10 @@ body::-webkit-scrollbar {
 header{
     background-color: var(--color-subtitulos);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 85px;
+    min-height: 85px;
     padding: 10px 5%;
     position: fixed;
     left: 0;
@@ -57,7 +57,9 @@ header .logo a h1:hover{
 }
 
 nav .nav-links {
-    list-style: none;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
 }
 
 nav .nav-links li{
@@ -75,8 +77,18 @@ nav .nav-links a{
     color: rgb(108,108,112);
 }
 
+nav .nav-links li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
 nav .nav-links li a:hover{
     color: black;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
 main {
